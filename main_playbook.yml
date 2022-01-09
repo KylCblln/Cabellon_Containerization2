@@ -1,0 +1,8 @@
+---
+  - name: Install and Build Dockerfile
+    hosts: clients
+
+    tasks:
+    - name: Build and Run LAMP Stack 
+      include_role:
+        name: lamp_docker
